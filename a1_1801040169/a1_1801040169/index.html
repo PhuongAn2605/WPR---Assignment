@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer="true"></script>
+</head>
+
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>WPR</h1>
+            <div>
+                <span>M</span>
+                <span>E</span>
+                <span>R</span>
+                <span>N</span>
+            </div>
+        </header>
+
+        <section id="quiz-name">
+            <h1>HTML Quiz</h1>
+        </section>
+        <section id="introduction">
+            <div class="author">By Phuong An</div>
+            <h2>The Test</h2>
+            <P>The test contains 10 questions and there is no time limit.
+            <p>The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.</p>
+            <h2>Count Your Score</h2>
+            <p>
+                You will get 1 point for each correct answer. At the end of the Quiz, your total score will be
+                displayed.
+                Maximum score is 10 points.</p>
+
+            <div class="form">
+                <h2>Start the quiz</h2>
+                <p>Good luck!</p><br>
+                <form>
+                    <button type="button" class="blue-btn" id="start-quiz">Start the HTML quiz <i
+                            class="arrow right"></i></button>
+                </form>
+            </div>
+        </section>
+        <section class="hidden" id="attempt-quiz">
+            <div id="show-question">
+            </div>
+            <div id="form">
+                <form>
+                    <button type="button" id="green-btn">Submit your answer <i class="arrow right"></i></button>
+                </form>
+            </div>
+            <div class="hidden" id="confirm">
+                <div class="confirm-form">
+                    <p class="confirm-label">Are you sure want to finish the quiz?</p>
+                    <div class="btn-confirm">
+                        <button class="btn-yes">Yes</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hidden" id="review-quiz">
+            <div class="form-result">
+                <form>
+                    <h2>Result:</h2>
+                    <p class="score"></p>
+                    <strong class="percent"></strong>
+                    <p class="message"></p>
+                    <button type="button" class="blue-btn" id="try-again">Try again</button>
+                </form>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
